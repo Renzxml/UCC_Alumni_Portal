@@ -31,6 +31,6 @@ class RegisterController extends Controller
             'password' => Hash::make($request->password),
         ]);
 
-        return redirect('/')->with('success', 'Registration successful! You can now log in.');
+        return redirect('/')->with('success', 'Registration successful! You can now log in');
     }
 }
