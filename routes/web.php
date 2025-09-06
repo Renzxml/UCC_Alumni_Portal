@@ -6,6 +6,3 @@ use App\Http\Controllers\RegisterController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::get('/register', [RegisterController::class, 'showForm']);
-Route::post('/register', [RegisterController::class, 'register']);
