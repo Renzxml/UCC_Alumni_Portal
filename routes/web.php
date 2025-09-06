@@ -17,6 +17,7 @@ Route::get('/about', function () { return view('about'); })->name('about');
 Route::get('/community', function () { return view('community'); })->name('community');
 Route::get('/login', function () { return view('login'); })->name('login');
 Route::get('/register', function () { return view('register'); })->name('register');
+Route::get('/contactus', function () { return view('contactus'); })->name('contactus');
 
 // Admin routes
 Route::prefix('admin')->group(function () {
