@@ -13,22 +13,6 @@
   </div>
 </section>
 
-<!-- About Us Section -->
-<section id="about" class="py-5 bg-secondary text-light">
-  <div class="container">
-    <h2 class="text-center mb-4">About Us</h2>
-    <p class="text-center">The UCC Alumni Link is a platform for graduates of UCC to network, share opportunities, and stay connected with the community. Whether you're just starting your career or already established, we help you stay in touch.</p>
-  </div>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="py-5 bg-dark">
-  <div class="container">
-    <h2 class="text-center mb-4">Contact</h2>
-    <p class="text-center">Have questions? Reach out to us via <a href="mailto:alumni@ucc.edu" class="text-info">alumni@ucc.edu</a></p>
-  </div>
-</section>
-
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 @endsection
