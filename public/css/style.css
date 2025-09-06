@@ -1,60 +1,138 @@
+:root {
+    /* Navbar */
+    --navbar-green: #006400;
+    --navbar-orange: #ff6600;
+    --navbar-border: #004d00;
+    --navbar-orange-hover: #ff6600;
+
+    /* Text */
+    --white: #ffffff;
+}
+
+
+
 body {
-    background-color: #202020ff;
+    background-color: var(--body-bg);
 }
+
 .card-header {
-    background-color: #343a40;
-    color: white;
+    background-color: var(--card-header-bg);
+    color: var(--white);
 }
+
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-bg);
 }
+
 .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #0056b3;
+    background-color: var(--btn-primary-hover);
+    border-color: var(--btn-primary-hover);
 }
+
 .form-control {
     border-radius: 0.25rem;
 }
+
 .alert {
     border-radius: 0.25rem;
 }
 
-
 /* NAVBAR */
-/* Branding Colors */
 .navbar-green {
-    background-color: #006400; /* Dark green */
-    color: white;
+    background-color: var(--navbar-green);
+    color: var(--white);
 }
 
 .navbar-orange {
-    background-color: #ff6600; /* Bright orange */
-    color: white;
+    background-color: var(--navbar-orange);
+    color: var(--white);
 }
 
 .navbar-border {
-    border-color: #004d00; /* Slightly darker green */
+    border-color: var(--navbar-border);
 }
 
 .navbar-green a {
-    color: white;
+    color: var(--white);
     transition: color 0.2s ease-in-out;
 }
 
 .navbar-green a:hover {
-    color: #ffb84d; /* Highlight orange */
+    color: var(--navbar-green-hover);
 }
+
 .navbar-orange a {
-    color: white;
+    color: var(--white);
     transition: color 0.2s ease-in-out;
 }
-nav {
-  border-radius: 0.6rem; /* more subtle curve */
-}
+
 .navbar-orange a:hover {
-    color: #004d00; /* Highlight green */
+    color: var(--navbar-orange-hover);
+}
+
+nav {
+    border-radius: 0.6rem;
+}
+
+/* ADMIN SIDEBAR */
+
+/* Sidebar container */
+.admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #2F5429; /* dark green */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* Logo section */
+.sidebar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sidebar-logo img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.sidebar-logo h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navigation links */
+.sidebar-nav {
+    width: 100%;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+
+/* Hover effect */
+.sidebar-nav a:hover {
+    background-color: var(--navbar-orange);
+}
+.sidebar-nav a.active {
+    background-color: var(--navbar-orange); /* active link color */
+    font-weight: bold;
 }
