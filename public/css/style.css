@@ -306,14 +306,6 @@ body {
     }
 }
 
-<<<<<<< HEAD
-/* contact us */
-    /* Light green background for the whole contact section */
-    .contact-section {
-        background-color: #D4EDDA; /* light green shade */
-        min-height: 100vh;
-    }
-=======
 .main-content {
     position: relative;
     z-index: 5;
@@ -323,4 +315,10 @@ body {
     padding-right: 20px;
     padding-bottom: 40px;
 }
->>>>>>> 8aa1ab486fe6a123592d22f9c0cf0b38a2fe894e
+
+/* contact us */
+    /* Light green background for the whole contact section */
+    .contact-section {
+        background-color: #D4EDDA; /* light green shade */
+        min-height: 100vh;
+    }
