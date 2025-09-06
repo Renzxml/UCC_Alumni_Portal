@@ -1,3 +1,10 @@
+@extends('../layouts.admin_app')
+
+@section('title', 'Analytics')
+
+@section('content')
+
 <div>
-    <!-- Do what you can, with what you have, where you are. - Theodore Roosevelt -->
+    <!-- You must be the change you wish to see in the world. - Mahatma Gandhi -->
 </div>
+@endsection

@@ -1,3 +1,10 @@
+@extends('../layouts.admin_app')
+
+@section('title', 'ID Request')
+
+@section('content')
+
 <div>
-    <!-- Very little is needed to make a happy life. - Marcus Aurelius -->
+    <!-- You must be the change you wish to see in the world. - Mahatma Gandhi -->
 </div>
+@endsection

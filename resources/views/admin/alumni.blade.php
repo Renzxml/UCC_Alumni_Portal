@@ -1,3 +1,10 @@
+@extends('../layouts.admin_app')
+
+@section('title', 'Alumni Directory')
+
+@section('content')
+
 <div>
-    <!-- He who is contented is rich. - Laozi -->
+    <!-- You must be the change you wish to see in the world. - Mahatma Gandhi -->
 </div>
+@endsection
