@@ -235,3 +235,56 @@ body {
     background-color: var(--navbar-orange); /* active link color */
     font-weight: bold;
 }
+
+/* Add this section to your existing CSS file for the overlapping navbar effect */
+
+/* Navbar overlay for carousel */
+.navbar-wrapper {
+    font-family: Arial, sans-serif;
+    position: relative;
+    z-index: 100; /* Ensure navbar appears above carousel */
+}
+
+/* Full width carousel positioning */
+#landing {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+    position: relative;
+    z-index: -1; /* Put carousel behind navbar */
+}
+
+/* Carousel styling */
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    width: 100%;
+}
+
+.carousel-item img {
+    height: 500px;
+    object-fit: cover;
+    filter: grayscale(40%);
+}
+
+/* Carousel controls visibility */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 10;
+}
+
+/* Announcements section positioning */
+#announcements {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+/* Mobile responsive adjustments for carousel */
+@media (max-width: 767px) {
+    #landing {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
+    }
+}
