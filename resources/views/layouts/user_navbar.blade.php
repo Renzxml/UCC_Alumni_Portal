@@ -1,4 +1,4 @@
-{{-- resources/views/layouts/navbar.blade.php --}}
+{{-- resources/views/layouts/user_navbar.blade.php --}}
 <div x-data="{ tab: localStorage.getItem('mobileTab') || 'home' }"
      x-init="$watch('tab', value => localStorage.setItem('mobileTab', value))"
      class="navbar-wrapper">

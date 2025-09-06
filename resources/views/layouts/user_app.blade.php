@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>@yield('title', 'App')</title>
+    <title>@yield('title', 'User_App')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{-- Tailwind (you can keep your build tooling instead) --}}
@@ -21,7 +21,7 @@
 
     {{-- Navbar partial (overlapping orange strip) --}}
     <div style="margin-top: -50px; z-index: 10; position: relative;">
-        @include('layouts.navbar')
+        @include('layouts.user_navbar')
     </div>
 
     {{-- main content --}}
