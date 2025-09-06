@@ -16,13 +16,12 @@ Route::get('/events', function () { return view('events'); })->name('events');
 Route::get('/about', function () { return view('about'); })->name('about');
 Route::get('/community', function () { return view('community'); })->name('community');
 Route::get('/login', function () { return view('login'); })->name('login');
+Route::get('/register', function () { return view('register'); })->name('register');
 
 // Admin routes
 Route::prefix('admin')->group(function () {
     // Default /admin → dashboard
-    Route::get('/', function() {
-        return redirect()->route('dashboard');
-    });
+    Route::get('/', function() {return redirect()->route('dashboard');});
 
     Route::get('/dashboard', function () { return view('admin.dashboard'); })->name('dashboard');
     Route::get('/alumni', function () { return view('admin.alumni'); })->name('alumni');
@@ -36,12 +35,10 @@ Route::prefix('admin')->group(function () {
 // User routes
 Route::prefix('user')->group(function () {
     // Default /user → home
-    Route::get('/', function() {
-        return redirect()->route('home');
-    });
+    Route::get('/', function() {return redirect()->route('home');});
 
     Route::get('/home', function () { return view('user.home'); })->name('home');
-    Route::get('/Careers', function () { return view('user.careers'); })->name('careers');
+    Route::get('/careers', function () { return view('user.careers'); })->name('careers');
     Route::get('/network', function () { return view('user.network'); })->name('network');
     Route::get('/messaging', function () { return view('user.messaging'); })->name('messaging');
     Route::get('/community', function () { return view('user.community'); })->name('community');
