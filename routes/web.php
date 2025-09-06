@@ -18,3 +18,14 @@ Route::get('/about', function () {return view('about');})->name('about');
 Route::get('/community', function () {return view('community');})->name('community');
 Route::get('/login', function () {return view('login');})->name('login');
 
+
+
+Route::prefix('admin')->group(function () {
+    Route::get('/dashboard', function () {return view('admin.dashboard');})->name('dashboard');
+    Route::get('/alumni', function () {return view('admin.alumni');})->name('alumni');
+    Route::get('/ID_request', function () {return view('admin.ID_request');})->name('ID_request');
+    Route::get('/community_management', function () {return view('admin.community_management');})->name('community_management');
+    Route::get('/analytics', function () {return view('admin.analytics');})->name('analytics');
+    Route::get('/admin_management', function () {return view('admin.admin_management');})->name('admin_management');
+    Route::get('/support_request', function () {return view('admin.support_request');})->name('support_request');
+});
