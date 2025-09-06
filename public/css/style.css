@@ -288,3 +288,10 @@ body {
         width: calc(100% + 30px);
     }
 }
+
+/* contact us */
+    /* Light green background for the whole contact section */
+    .contact-section {
+        background-color: #D4EDDA; /* light green shade */
+        min-height: 100vh;
+    }
