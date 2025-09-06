@@ -22,3 +22,17 @@ body {
 .alert {
     border-radius: 0.25rem;
 }
+
+
+/* NAVBAR */
+
+nav {
+    transition: background 0.3s ease;
+}
+nav.scrolled {
+    background: #1f2937; /* darker gray */
+}
+nav .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
