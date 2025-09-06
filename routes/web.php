@@ -37,13 +37,13 @@ Route::prefix('admin')->group(function () {
 Route::prefix('user')->group(function () {
     // Default /user → home
     Route::get('/', function() {
-        return redirect()->route('user_home');
+        return redirect()->route('home');
     });
 
-    Route::get('/home', function () { return view('user.home'); })->name('user_home');
-    Route::get('/directory', function () { return view('user.directory'); })->name('directory');
-    Route::get('/events', function () { return view('user.events'); })->name('user_events');
-    Route::get('/services', function () { return view('user.services'); })->name('services');
-    Route::get('/support', function () { return view('user.support'); })->name('support');
-    Route::get('/settings', function () { return view('user.settings'); })->name('user_settings');
+    Route::get('/home', function () { return view('user.home'); })->name('home');
+    Route::get('/Careers', function () { return view('user.careers'); })->name('careers');
+    Route::get('/network', function () { return view('user.network'); })->name('network');
+    Route::get('/messaging', function () { return view('user.messaging'); })->name('messaging');
+    Route::get('/community', function () { return view('user.community'); })->name('community');
+    Route::get('/profile', function () { return view('user.profile'); })->name('profile');
 });

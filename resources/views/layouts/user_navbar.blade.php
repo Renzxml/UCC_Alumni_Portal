@@ -14,13 +14,12 @@
 
             {{-- Menu Links --}}
             <ul class="navbar-links">
-                <li><a href="{{ route('welcome') }}">Home</a></li>
-                <li><a href="{{ url('/careers') }}">Careers</a></li>
-                <li><a href="{{ url('/online_services') }}">Online Services</a></li>
-                <li><a href="{{ url('/events') }}">Events</a></li>
-                <li><a href="{{ url('/about') }}">About</a></li>
-                <li><a href="{{ url('/community') }}">Community</a></li>
-                <li><a href="{{ url('/login') }}">Login</a></li>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('careers') }}">Careers</a></li>
+                <li><a href="{{ route('network') }}">Network</a></li>
+                <li><a href="{{ route('messaging') }}">Messaging</a></li>
+                <li><a href="{{ route('community') }}">Community</a></li>
+                <li><a href="{{ route('profile') }}">Profile</a></li>
             </ul>
         </nav>
     </div>
