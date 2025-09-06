@@ -25,14 +25,36 @@ body {
 
 
 /* NAVBAR */
+/* Branding Colors */
+.navbar-green {
+    background-color: #006400; /* Dark green */
+    color: white;
+}
 
+.navbar-orange {
+    background-color: #ff6600; /* Bright orange */
+    color: white;
+}
+
+.navbar-border {
+    border-color: #004d00; /* Slightly darker green */
+}
+
+.navbar-green a {
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
+
+.navbar-green a:hover {
+    color: #ffb84d; /* Highlight orange */
+}
+.navbar-orange a {
+    color: white;
+    transition: color 0.2s ease-in-out;
+}
 nav {
-    transition: background 0.3s ease;
+  border-radius: 0.6rem; /* more subtle curve */
 }
-nav.scrolled {
-    background: #1f2937; /* darker gray */
-}
-nav .nav-link {
-    color: #ffffff;
-    transition: color 0.3s ease;
+.navbar-orange a:hover {
+    color: #004d00; /* Highlight green */
 }
