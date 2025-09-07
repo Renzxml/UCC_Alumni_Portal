@@ -6,60 +6,93 @@
 
 <!-- Full Width Carousel Section -->
 <section id="landing">
-    <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-            <!-- Slide 1 -->
-            <div class="carousel-item active">
-                <img src="{{ asset('images/front.jpg') }}" class="d-block w-100" alt="UCC Building">
-            </div>
-            <!-- Slide 2 -->
-            <div class="carousel-item">
-                <img src="{{ asset('images/UCCC.jpg') }}" class="d-block w-100" alt="UCC Campus">
-            </div>
-        </div>
-
-        <!-- Carousel controls -->
-        <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </button>
+    <div class="ratio ratio-21x9">
+        <img src="{{ asset('images/background.jpg') }}" 
+             class="w-100 h-100 object-fit-cover" 
+             alt="UCC Campus">
     </div>
 </section>
+
+
 
 <!-- Announcements Section -->
 <section id="announcements" class="py-5 bg-light text-center">
     <div class="container">
-        <h2 class="mb-4 text-success">Announcements</h2>
-        <div class="row">
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Announcement 1</h5>
-                        <p class="card-text">Details about the first announcement go here.</p>
+
+        <!-- Section Title -->
+        <h2 class="fw-bold text-success">Announcements</h2>
+        <p class="text-muted mb-5">
+            Stay informed with the latest updates! Keep up with everything that’s happening—
+            explore our news and announcements now.
+        </p>
+
+        <!-- Announcement Cards -->
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <!-- Placeholder for image -->
+                    <div class="bg-secondary rounded mb-3" style="height: 250px;"></div>
+                    <div class="card-body text-start">
+                        <h5 class="fw-bold text-success">Title</h5>
+                        <p class="text-muted mb-1">MM-DD-YYYY</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="btn btn-success rounded-pill px-4 fw-bold">
+                            Continue Reading
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Announcement 2</h5>
-                        <p class="card-text">Details about the second announcement go here.</p>
+
+            <!-- Card 2 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="bg-secondary rounded mb-3" style="height: 250px;"></div>
+                    <div class="card-body text-start">
+                        <h5 class="fw-bold text-success">Title</h5>
+                        <p class="text-muted mb-1">MM-DD-YYYY</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="btn btn-success rounded-pill px-4 fw-bold">
+                            Continue Reading
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4 mb-3">
-                <div class="card shadow-sm border-0">
-                    <div class="card-body">
-                        <h5 class="card-title">Announcement 3</h5>
-                        <p class="card-text">Details about the third announcement go here.</p>
+
+            <!-- Card 3 -->
+            <div class="col-md-4">
+                <div class="card h-100 border-0 shadow-sm">
+                    <div class="bg-secondary rounded mb-3" style="height: 250px;"></div>
+                    <div class="card-body text-start">
+                        <h5 class="fw-bold text-success">Title</h5>
+                        <p class="text-muted mb-1">MM-DD-YYYY</p>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                        </p>
+                        <a href="#" class="btn btn-success rounded-pill px-4 fw-bold">
+                            Continue Reading
+                        </a>
                     </div>
                 </div>
             </div>
+
         </div>
+
+        <!-- View All Button -->
+        <div class="mt-5">
+            <a href="#" class="btn btn-success rounded-pill px-4 fw-bold">
+                View all Announcements
+            </a>
+        </div>
+
     </div>
 </section>
+
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.bundle.min.js"></script>

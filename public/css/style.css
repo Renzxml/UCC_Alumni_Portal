@@ -271,25 +271,6 @@ body {
     z-index: -1; /* Put carousel behind navbar */
 }
 
-/* Carousel styling */
-.carousel-inner,
-.carousel-item,
-.carousel-item img {
-    width: 100%;
-}
-
-.carousel-item img {
-    height: 500px;
-    object-fit: cover;
-    filter: grayscale(40%);
-}
-
-/* Carousel controls visibility */
-.carousel-control-prev,
-.carousel-control-next {
-    z-index: 10;
-}
-
 /* Announcements section positioning */
 #announcements {
     position: relative;
