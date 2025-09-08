@@ -363,6 +363,7 @@ body {
     }
 
 
+    
 .mySwiper {
   width: 100vw;  /* ✅ take full screen width */
   height: 600px;
@@ -372,6 +373,7 @@ body {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  z-index: 2; /* ✅ make sure swiper content stays above gradients */
 }
 
 /* Slides */
@@ -404,38 +406,42 @@ body {
   margin: auto;
 }
 
-/* ✅ Full-width gradient overlays without border */
-.mySwiper::before,
-.mySwiper::after {
+/* ✅ Full-width gradient overlays applied to section */
+#events {
+  position: relative;
+  overflow: hidden; /* keeps gradient inside */
+}
+
+#events::before,
+#events::after {
   content: "";
   position: absolute;
   top: 0;
-  height: 100%;
-  width: 60%;  /* adjust coverage */
-  z-index: 5;
+  bottom: 0;      /* ✅ cover full section height */
+  width: 60%;     /* adjust coverage */
+  z-index: 1;     /* behind swiper */
   pointer-events: none;
 }
 
-.mySwiper::before {
+#events::before {
   left: 0;
   background: linear-gradient(
     to right,
     #228B22 14%,
     transparent 70%
   );
-  opacity: 0.8; /* tweak if needed */
+  opacity: 0.8;
 }
 
-.mySwiper::after {
+#events::after {
   right: 0;
   background: linear-gradient(
     to left,
     #228B22 14%,
     transparent 70%
   );
-  opacity: 0.8; /* tweak if needed */
+  opacity: 0.8;
 }
-
 
 /* Arrows */
 .swiper-button-prev,
@@ -449,7 +455,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   z-index: 10;
-  opacity: 0.8;            /* ✅ make button itself slightly transparent */
+  opacity: 0.8;            /* ✅ make button slightly transparent */
   transition: opacity 0.3s ease;
 }
 
