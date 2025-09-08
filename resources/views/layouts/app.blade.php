@@ -8,6 +8,9 @@
     <!-- ✅ Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- ✅ Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- ✅ Your custom CSS (optional for overrides) -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 </head>
@@ -21,12 +24,20 @@
         @include('layouts.navbar')
     </div>
 
-    {{-- Main content --}}
+       {{-- Main content --}}
     <main class="main-content">
         @yield('content')
     </main>
 
+    {{-- Footer --}}
+    @include('layouts.footer')
+
+    <!-- ✅ Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- ✅ Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- ✅ Custom JS -->
+    <script src="{{ asset('js/script.js') }}"></script>
 </body>
-
-
 </html>
+
