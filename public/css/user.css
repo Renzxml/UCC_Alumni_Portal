@@ -135,7 +135,15 @@
     border-color: var(--navbar-border);
 }
 
-/* Responsive */
+/* Default (mobile first) */
+.navbar-desktop {
+    display: none;
+}
+.navbar-mobile {
+    display: block;
+}
+
+/* Show desktop only on larger screens */
 @media(min-width: 768px) {
     .navbar-desktop {
         display: block;
@@ -145,88 +153,6 @@
     }
 }
 
-#landing {
-    margin-left: calc(-50vw + 50%);
-    margin-right: calc(-50vw + 50%);
-    width: 100vw;
-    position: relative;
-    z-index: -1; /* Keeps image behind navbar */
-}
-
-/* Dark overlay on background */
-#landing::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        to right, 
-        rgba(255, 255, 255, 0.863) 15%, 
-        rgba(34, 139, 34, 0.9) 40%
-    );
-    opacity: 0.5;
-    z-index: 1;
-}
-
-
-/* Content wrapper */
-#landing .overlay-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: left;
-    color: white;
-    max-width: 80%;
-    z-index: 2;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-/* Logo */
-#landing .overlay-content img {
-    width: 80%;  
-    height: auto;
-}
-
-/* Text */
-/* Text */
-#landing .overlay-content h2 {
-    font-weight: bold;
-    font-size: 50px;   
-    margin-left: 13%;
-    /* margin-bottom: 100%; */
-    color: #ffffff;
-    margin-bottom: 20px;
-}
-
-#landing .overlay-content p {
-    font-size: 20px;   /* bigger body text */
-    line-height: 1.8;  /* more spacing for readability */
-    margin-left: 13%;
-    font-weight: bold;
-}
-
-
-
-/* Announcements section positioning */
-#announcements {
-    position: relative;
-    z-index: 1;
-    margin-top: 0;
-}
-
-/* Mobile responsive adjustments for carousel */
-@media (max-width: 767px) {
-    #landing {
-        margin-left: -15px;
-        margin-right: -15px;
-        width: calc(100% + 30px);
-    }
-}
 
 .main-content {
     position: relative;

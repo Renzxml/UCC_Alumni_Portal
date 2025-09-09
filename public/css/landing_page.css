@@ -135,7 +135,15 @@
     border-color: var(--navbar-border);
 }
 
-/* Responsive */
+/* Default (mobile first) */
+.navbar-desktop {
+    display: none;
+}
+.navbar-mobile {
+    display: block;
+}
+
+/* Show desktop only on larger screens */
 @media(min-width: 768px) {
     .navbar-desktop {
         display: block;
