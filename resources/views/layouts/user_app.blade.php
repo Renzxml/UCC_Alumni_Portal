@@ -22,7 +22,7 @@
 
     {{-- Navbar partial overlapping orange strip --}}
     <div class="navbar-wrapper">
-        @include('layouts.navbar')
+        @include('layouts.user_navbar')
     </div>
 
        {{-- Main content --}}
