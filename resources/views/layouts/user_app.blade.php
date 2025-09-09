@@ -13,6 +13,7 @@
 
     {{-- your custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/user.css') }}">
 </head>
 <body class="bg-gray-100 min-h-screen">
 

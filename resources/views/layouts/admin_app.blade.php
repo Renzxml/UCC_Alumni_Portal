@@ -13,6 +13,7 @@
 
     {{-- your custom CSS --}}
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/admin.css') }}">
 </head>
 <body class="flex">
 

@@ -13,6 +13,7 @@
 
     <!-- ✅ Your custom CSS (optional for overrides) -->
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/landing_page.css') }}">
 </head>
 <body class="bg-light">
 
