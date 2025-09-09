@@ -1,0 +1,392 @@
+/* Navbar overlay for carousel */
+.navbar-wrapper {
+    font-family: Arial, sans-serif;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    z-index: 100; /* Ensure navbar appears above carousel */
+}
+
+.navbar-desktop {
+    position: absolute;       /* float above orange strip */
+    top: -30px;                /* distance from top of orange strip */
+    left: 50%;                /* start at 50% horizontally */
+    transform: translateX(-50%); /* center horizontally */
+    width: 90%;               /* take 90% of screen width */
+    z-index: 20;              /* float above everything else */
+}
+
+
+/* Desktop Navbar */
+.navbar-desktop-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;               /* full width */
+    padding: 16px 10%;         /* 10% padding on left & right for side space */
+    border-radius: 0.6rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    background-color: var(--navbar-green);
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+    transition: color 0.2s;
+}
+
+.navbar-links li a:hover {
+    color: var(--navbar-orange-hover);
+}
+
+/* Mobile Navbar */
+.navbar-mobile {
+    display: block;
+}
+
+.navbar-mobile-top {
+    text-align: center;
+}
+
+.mobile-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.mobile-links li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--white);
+    transition: color 0.2s;
+}
+
+.mobile-links li a:hover {
+    color: var(--navbar-orange-hover);
+}
+
+/* Bottom Tab Bar */
+.navbar-mobile-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid var(--navbar-border);
+}
+
+.bottom-tabs {
+    display: flex;
+    margin: 0;
+    padding: 4px 0;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.bottom-tabs li button {
+    background: none;
+    border: none;
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.bottom-tabs li button.active {
+    color: var(--navbar-green);
+    font-weight: bold;
+}
+
+/* Color Classes */
+.navbar-green {
+    background-color: var(--navbar-green);
+    color: var(--white);
+}
+
+.navbar-orange {
+    background-color: var(--navbar-orange);
+    color: var(--white);
+}
+.navbar-border {
+    border-color: var(--navbar-border);
+}
+
+/* Responsive */
+@media(min-width: 768px) {
+    .navbar-desktop {
+        display: block;
+    }
+    .navbar-mobile {
+        display: none;
+    }
+}
+
+#landing {
+    margin-left: calc(-50vw + 50%);
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+    position: relative;
+    z-index: -1; /* Keeps image behind navbar */
+}
+
+/* Dark overlay on background */
+#landing::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        to right, 
+        rgba(255, 255, 255, 0.863) 15%, 
+        rgba(34, 139, 34, 0.9) 40%
+    );
+    opacity: 0.5;
+    z-index: 1;
+}
+
+
+/* Content wrapper */
+#landing .overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    color: white;
+    max-width: 80%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Logo */
+#landing .overlay-content img {
+    width: 80%;  
+    height: auto;
+}
+
+/* Text */
+/* Text */
+#landing .overlay-content h2 {
+    font-weight: bold;
+    font-size: 50px;   
+    margin-left: 13%;
+    /* margin-bottom: 100%; */
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+#landing .overlay-content p {
+    font-size: 20px;   /* bigger body text */
+    line-height: 1.8;  /* more spacing for readability */
+    margin-left: 13%;
+    font-weight: bold;
+}
+
+
+
+/* Announcements section positioning */
+#announcements {
+    position: relative;
+    z-index: 1;
+    margin-top: 0;
+}
+
+/* Mobile responsive adjustments for carousel */
+@media (max-width: 767px) {
+    #landing {
+        margin-left: -15px;
+        margin-right: -15px;
+        width: calc(100% + 30px);
+    }
+}
+
+.main-content {
+    position: relative;
+    z-index: 5;
+    background: url('../images/bg.jpg') no-repeat center top;
+    background-size: cover;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px; */
+}
+
+/* contact us */
+    /* Light green background for the whole contact section */
+    .contact-section {
+        background-color: #D4EDDA; /* light green shade */
+        min-height: 100vh;
+    }
+
+
+    
+.mySwiper {
+  width: 100vw;  /* ✅ take full screen width */
+  height: 600px;
+  margin-left: calc(-50vw + 50%); /* ✅ cancels container padding */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  z-index: 2; /* ✅ make sure swiper content stays above gradients */
+}
+
+/* Slides */
+.mySwiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.4s, opacity 0.4s;
+  opacity: 0.3;
+  transform: scale(0.8);
+}
+
+.mySwiper .swiper-slide-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 3;
+}
+
+.mySwiper .swiper-slide-next,
+.mySwiper .swiper-slide-prev {
+  opacity: 0.5;
+  transform: scale(0.9);
+}
+
+/* Card */
+.mySwiper .card {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 380px;
+  margin: auto;
+}
+
+/* ✅ Full-width gradient overlays applied to section */
+#events {
+  position: relative;
+  overflow: hidden; /* keeps gradient inside */
+}
+
+#events::before,
+#events::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;      /* ✅ cover full section height */
+  width: 60%;     /* adjust coverage */
+  z-index: 1;     /* behind swiper */
+  pointer-events: none;
+}
+
+#events::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    #228B22 14%,
+    transparent 70%
+  );
+  opacity: 0.8;
+}
+
+#events::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    #228B22 14%,
+    transparent 70%
+  );
+  opacity: 0.8;
+}
+
+/* Arrows */
+.swiper-button-prev,
+.swiper-button-next {
+  color: #ffffff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: transparent; /* ✅ remove white background */
+  box-shadow: none;        /* ✅ remove shadow */
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  opacity: 0.8;            /* ✅ make button slightly transparent */
+  transition: opacity 0.3s ease;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  opacity: 1; /* brighter when hovered */
+}
+
+/* ✅ Adjust positioning */
+.swiper-button-prev {
+  left: 60px; /* move a bit inward */
+}
+
+.swiper-button-next {
+  right: 60px; /* move a bit inward */
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* footer */
+.footer {
+  background-color: #2d4f2d; /* Dark green background */
+  color: #fff;
+}
+
+.footer .footer-heading {
+  color: #ffb400; /* Orange section titles */
+  font-weight: bold;
+  margin-top: 15px;
+  margin-bottom: 8px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #ffb400;
+}
+
+.footer-bottom {
+  background-color: #eaeaea; /* Gray strip at bottom */
+  color: #000;
+  font-weight: 600;
+}

@@ -1,0 +1,57 @@
+/* ADMIN SIDEBAR */
+
+/* Sidebar container */
+.admin-sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: var(--navbar-green); /* dark green */
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 0;
+}
+
+/* Logo section */
+.sidebar-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sidebar-logo img {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.sidebar-logo h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Navigation links */
+.sidebar-nav {
+    width: 100%;
+}
+
+.sidebar-nav a {
+    display: block;
+    padding: 12px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    transition: background 0.2s;
+}
+
+/* Hover effect */
+.sidebar-nav a:hover {
+    background-color: var(--navbar-orange);
+}
+.sidebar-nav a.active {
+    background-color: var(--navbar-orange); /* active link color */
+    font-weight: bold;
+}
