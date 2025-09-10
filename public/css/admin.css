@@ -55,3 +55,9 @@
     background-color: var(--navbar-orange); /* active link color */
     font-weight: bold;
 }
+
+
+.h-90vh {
+    height: 93vh;     /* 90% of viewport height */
+    max-height: 93vh; /* Prevent overflow beyond 90% */
+}
